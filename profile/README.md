@@ -52,6 +52,8 @@ _Table 1: Summary of inputs_
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5Land               | land-weather reanalysis  | 2013-2023  | high/low vegetation index, relative humidity, surf solar radiation, temperature, total precipitation, wind direction and speed | hourly                  | 0.1° x 0.1°            |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5 Single Level      | weather model reanalysis | 2013-2023  | boundary layer height                                                                                                          | hourly                  | 0.25° x 0.25°          |
 | EM      | CAMS       | EM-CAMS         | v.1.0.0     | CAMS-GLOB-ANT v6.2     | emissions from CAMS      | 2000-2024  | NO2                                                                                                                            | monthly                 | 0.1° x 0.1°            |
+| EM | CAMS   | EM-CAMS   | v.2.0.0 | CAMS-REG-ANT v8.0  | regional anthropogenic emissions | 2000-2022 | CO, NH3, NO, NO2, PM2.5, PM10, SO2        | yearly                 | 0.05° x 0.1°            |
+| EM | TEMPO  | EM-TEMPO  | v.2.0.0 | CAMS-REG-TEMPO  v4.1  (Simplified)     | Temporal Profiles   | 2000-2022 | CO, NH3, NO, NO2, PM2.5, PM10, SO2 | monthly-weekly   | 0.05° x 0.1°       |
 
 <p>&nbsp;</p>
 
@@ -64,6 +66,7 @@ _Table 2: Summary of intermediates transformation_
 | WE      | C3S        | WE-C3S          | v.0.0.1     | none                       | none                        | hourly -> daily             | mean,min,max,mode depending on the variable |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | none                       | none                        | hourly -> daily             | mean,min,max,mode depending on the variable |
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | none                       | none                        | monthly-> daily             | piecewise constant function                 |
+| EM      | CAMS       | EM-CAMS         | v.0.0.2     | none                       | none                        | yearly-> daily             | weight multipication and sum                 |
 
 <p>&nbsp;</p>
 
@@ -80,6 +83,7 @@ _Table 3: Summary of outputs_
 | WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.1° x 0.1°            | ?          | ?                            | ?          |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.25° x 0.25°          | 1          | 54 Mb                        | Rdata      |
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | 2019-2023  | daily                   | 0.1° x 0.1°            | 1          | 1.83 Gb / 83 Mb              | csv/Rdata  |
+| EM      | CAMS       | EM-CAMS         | v.0.0.2     | 2000-2023*  | daily                   | 0.05° x 0.1°            | 13+13          | 42x2(?) Gb / 83 Mb              | csv/Rdata  |
 
 
 ### Air Quality data (AQ)
