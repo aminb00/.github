@@ -52,6 +52,8 @@ _Table 1: Summary of inputs_
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5Land               | land-weather reanalysis  | 2013-2023  | high/low vegetation index, relative humidity, surf solar radiation, temperature, total precipitation, wind direction and speed | hourly                  | 0.1° x 0.1°            |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5 Single Level      | weather model reanalysis | 2013-2023  | boundary layer height                                                                                                          | hourly                  | 0.25° x 0.25°          |
 | EM      | CAMS       | EM-CAMS         | v.1.0.0     | CAMS-GLOB-ANT v6.2     | emissions from CAMS      | 2000-2024  | NO2                                                                                                                            | monthly                 | 0.1° x 0.1°            |
+| EM      | CAMS      | EM-CAMS         | v.1.0.0     | CAMS-REG-ANT    | regional anthropogenic emissions | 2019-2023* | NO2, … (eventuali altre)        | monthly                 | 0.1° x 0.1°            |
+| EM      | TEMPO     | EM-TEMPO        | v.1.0.0     | TEMPO           | esempio: nuove rilevazioni EM    | 2013-2023* | es. NOx, PM, ecc. (da definire) | daily (o da definire)   | ??? (da definire)      |
 
 <p>&nbsp;</p>
 
